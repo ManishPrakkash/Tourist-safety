@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Last received SMS -->
+    <TextView
+        android:id="@+id/lastSms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last SMS will appear here"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:background="#EEEEEE"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Parsed location -->
+    <TextView
+        android:id="@+id/locationText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lat: --, Lon: --"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:background="#DDFFDD"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Button: Refresh / wait for SMS -->
+    <Button
+        android:id="@+id/updateLocationBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔄 Refresh / Wait for SMS"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Button: Forward to server -->
+    <Button
+        android:id="@+id/forwardBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📤 Forward to Server" />
+
+</LinearLayout>

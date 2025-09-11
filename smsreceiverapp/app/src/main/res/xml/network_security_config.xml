@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Allow HTTP (cleartext) traffic to your server -->
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- If using ngrok -->
+        <domain includeSubdomains="true">62cc7801607d.ngrok-free.app</domain>
+
+        <!-- If testing on local network (replace with your PC's IP) -->
+        <domain includeSubdomains="true">192.168.1.100</domain>
+    </domain-config>
+</network-security-config>
