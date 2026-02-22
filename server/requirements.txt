@@ -1,1 +1,3 @@
-flask
+Flask
+firebase-admin
+gunicorn
