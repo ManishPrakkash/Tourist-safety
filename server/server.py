@@ -11,7 +11,7 @@ HTML_TEMPLATE = """
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tourist Safety Dashboard</title>
+    <title>Blood Donors Tracker</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -47,9 +47,9 @@ HTML_TEMPLATE = """
         <div>
             <div style="display:flex; align-items:center; gap:8px">
                 <i class="fa-solid fa-location-dot" style="color:var(--primary)"></i>
-                <h2 style="margin:0">Tourist Safety Dashboard</h2>
+                <h2 style="margin:0">Blood Donors Tracker</h2>
             </div>
-            <div class="subtitle">Real-time monitoring of tourist locations and safety</div>
+            <div class="subtitle">Real-time monitoring of donor locations and safety</div>
         </div>
         <div class="controls">
             <button id="themeBtn" class="btn secondary" title="Toggle theme"><i class="fa-solid fa-moon"></i></button>
@@ -215,9 +215,6 @@ def latest_data():
 @app.route('/show_location')
 def show_location():
     return render_template_string(HTML_TEMPLATE)
-
-# if __name__ == "__main__":
-#     app.run(host="0.0.0.0", port=5000, debug=True)
 
 @app.route("/")
 def index():
